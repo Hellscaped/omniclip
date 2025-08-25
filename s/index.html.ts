@@ -19,6 +19,7 @@ export default template(async basic => {
 			<script src="https://cdn.jsdelivr.net/npm/@pixi-essentials/object-pool@1.0.1/dist/pixi-object-pool.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/@pixi-essentials/bounds@3.0.0/dist/bounds.js"></script>
 			<script src="https://cdn.jsdelivr.net/npm/@pixi-essentials/transformer@3.0.2/dist/transformer.js"></script>
+  			<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
 			<!-- <script src="https://cdn.jsdelivr.net/npm/pixi.js@8.8.1/dist/pixi.min.js"></script> -->
 			<!-- <script src="https://cdn.jsdelivr.net/npm/pixi-filters@6.1.0/dist/pixi-filters.min.js"></script> -->
 			<script src="coi-serviceworker.js"></script>
@@ -35,6 +36,7 @@ export default template(async basic => {
 			<title>omni-clip</title>
 		`,
 		body: html`
+  			<script>eruda.init();</script>
 			<div class="loading-page-indicator">
 				<img class="logo-loader" src="/assets/icon3.png" />
 				<div class="loader"><div class="loaderBar"></div></div>
